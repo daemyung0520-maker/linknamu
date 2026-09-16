@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 작업 인계 문서 (이 PC에만 보관, 공개 저장소에 올리지 않음)
+HANDOFF.md
