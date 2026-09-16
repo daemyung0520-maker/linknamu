@@ -1,8 +1,8 @@
 const profile = {
-  name: "김클로",
-  bio: "세계 최강 바이브코더",
-  // 사진 파일을 public/ 에 넣고 "/avatar.jpg" 처럼 적으면 사진으로 바뀝니다
-  avatar: "",
+  name: "김개발",
+  bio: "풀 스택 개발자, 요즘에는 AI 개발에 관심이 많아요",
+  // 사진 파일을 public/ 에 넣고 "/avatar.jpg" 처럼 적으면 사진이 바뀝니다
+  avatar: "/avatar.svg",
 };
 
 const links = [
@@ -28,7 +28,7 @@ export default function Home() {
       )}
 
       <h1 className="mt-2 text-xl font-bold">{profile.name}</h1>
-      <p className="text-sm text-black/60 dark:text-white/60">{profile.bio}</p>
+      <p className="text-center text-sm text-black/60 dark:text-white/60">{profile.bio}</p>
 
       <ul className="mt-4 flex w-full flex-col gap-3">
         {links.map((link) => (
