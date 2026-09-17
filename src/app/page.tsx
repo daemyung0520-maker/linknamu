@@ -1,3 +1,5 @@
+import LinkList from "@/components/LinkList";
+
 const profile = {
   name: "김개발",
   bio: "풀 스택 개발자, 요즘에는 AI 개발에 관심이 많아요",
@@ -5,11 +7,6 @@ const profile = {
   avatar: "/avatar.svg",
 };
 
-const links = [
-  { title: "인스타그램", url: "https://instagram.com" },
-  { title: "유튜브", url: "https://youtube.com" },
-  { title: "블로그", url: "https://blog.naver.com" },
-];
 
 export default function Home() {
   return (
@@ -34,20 +31,7 @@ export default function Home() {
         {profile.bio}
       </p>
 
-      <ul className="mt-11 flex w-full flex-col gap-3.5">
-        {links.map((link) => (
-          <li key={link.url}>
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-card px-5 py-4 text-center text-base font-semibold"
-            >
-              {link.title}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <LinkList />
     </main>
   );
 }
